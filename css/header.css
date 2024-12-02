@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap');
+
+:root {
+  --white: #E1E3E6;
+  --hover-color: #333333;
+  --gray-color: #939393;
+}
+
+/* Header */
+
+.header {
+  position: fixed;
+  width: 100%;
+  color: var(--white);
+  background-color: #222222;
+  border-bottom: #292929 1px solid;
+}
+.header__row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  row-gap: 20px;
+}
+.header__logo-link{
+  display: flex;
+  align-items: center;  
+  color: var(--white);
+  font-size: 20px;
+  font-family: "Inter", serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin: 0 28px 0 0;
+}
+.header__logo-link img{
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+.header__search {
+  position: relative;
+  padding: 0 15px 0 0;
+}
+.header__search-input {
+  display: flex;
+  align-items: center;
+  max-width: 230px;
+  padding: 7px 15px 7px 35px;
+  border-radius: 7px;
+  background-color: #424242;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--gray-color);
+}
+.header__search-input:hover{
+  background-color: #4A4A4A;
+}
+.header__search-icon{
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-49%);
+  width: 16px;
+  height: 16px;
+  cursor: text;
+}
+.header__notification img{
+  width: 24px;
+  height: 24px;
+}
+.header__notification{
+  padding: 15px 15px;
+  cursor: pointer;
+}
+.header__musik-box:hover, .header__notification:hover, .header__profile:hover{
+  background-color: var(--hover-color);
+}
+.header__musik-box{
+  display: flex;
+  max-width: 380px;
+  padding: 15px 15px;
+  color: var(--gray-color);
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 1em;
+  font-size: 15px;
+}
+.header__musik-box img{
+  width: 16px;
+  height: 16px;
+}
+.header__profile{
+  display: flex;
+  align-items: center;  
+  margin-left: auto;
+  margin-right: 0;
+  padding: 0 0 0 10px;
+}
+.header__profile img {
+  height: 32px;
+  width: 32px;
+  border-radius: 20px;
+}
