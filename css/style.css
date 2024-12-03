@@ -37,7 +37,7 @@ html, body {
   display: grid;
   grid-template-rows: 53px 190px 290px 250px;
   grid-template-columns: 2fr 7fr 4fr ;
-  row-gap: 16px;
+  row-gap: 12px;
   height: 100vh;
 }
 .profile {
@@ -58,6 +58,7 @@ html, body {
 .profile-wrapper {
 }
 .profile-main {
+  display: flex;
   margin: 0 0 0 16px;
 }
 .profile-info {
@@ -95,6 +96,20 @@ html, body {
   color: var(--gray-color);
 }
 .profile-button {
+  margin: 0 0 0 11.5em;
+}
+.profile-button button{
+  text-align: center; 
+  line-height: 32px;
+  height: 32px;
+  background: #393939;
+  border-radius: 7px;
+}
+.profile-button span{
+  padding: 0 16px;
+  font-size: 14px;
+  color: var(--white);
+  font-weight: 600;
 }
 .preview-panel {
   grid-column: 2 / 3;
