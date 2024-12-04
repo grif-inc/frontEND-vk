@@ -105,6 +105,9 @@ html, body {
   background: #393939;
   border-radius: 7px;
 }
+.profile-button button:hover{
+  background: #3D3D3D;
+}
 .profile-button span{
   padding: 0 16px;
   font-size: 14px;
@@ -113,10 +116,65 @@ html, body {
 }
 .preview-panel {
   grid-column: 2 / 3;
-  background-color: #0671b8bd;
-  border: 1px solid red;
+  border: #363738 1px solid;
+  background: var(--bacground-color-elements);
+  border-radius: 10px;
   grid-row: 3 / 4;
+  padding: 8px;
+  margin-right: 16px;
 }
+.preview-panel__sections {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+}
+.preview-panel__sections-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--gray-color);
+  font-weight: 500;
+  font-size: 14px;
+  padding: 2px 8px;
+}
+.preview-panel__sections-item img{
+  filter: brightness(0) saturate(100%) invert(58%) sepia(0%) saturate(0%) hue-rotate(187deg) brightness(93%) contrast(89%);
+  width: 20px;
+  height: 20px;
+  margin-right: 3px;
+}
+.preview-panel__content {
+  padding: 8px 12px 12px;
+}
+.preview-panel__content-photo {
+}
+.preview-panel__content-photo img{
+  width: 166px;
+  height: 166px;
+}
+.preview-panel__content-buttons {
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .page__inner {
   grid-row: 4;
 }
