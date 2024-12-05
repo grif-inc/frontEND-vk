@@ -50,6 +50,7 @@
   color: var(--gray-color);
   margin-right: 10px;
   font-size: 12px;
+  line-height: 17px;
 }
 .sidebar__menu a:hover{
   text-decoration: underline; 
