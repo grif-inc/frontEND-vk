@@ -12,6 +12,7 @@
   padding: 15px 0 0 0;
   margin: 52px 0 0 0;
   grid-row: 1 / 5;
+  min-width: 160px;
 }
 .sidebar__line{
   background: #363738;
@@ -28,7 +29,7 @@
 .sidebar div {
   color: var(--white);
   margin-left: 10px;
-  font-size: 14px;
+  font-size: 12px;
 }
 .sidebar li {
   display: flex;
@@ -37,6 +38,7 @@
   padding: 5px;
   border-radius: 5px;
   width: 95%;
+  transition: background-color 0.15s ease;
 }
 .sidebar li:hover {
   background: #1D1D1D;

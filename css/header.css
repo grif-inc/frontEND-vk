@@ -15,6 +15,7 @@
   color: var(--white);
   background-color: #222222;
   border-bottom: #292929 1px solid;
+  z-index: 1;
 }
 .header__row {
   display: flex;
@@ -78,6 +79,7 @@
 .header__musik-box{
   display: flex;
   max-width: 380px;
+  min-width: 347px;
   padding: 15px 15px;
   color: var(--gray-color);
   cursor: pointer;
@@ -95,10 +97,30 @@
   align-items: center;  
   margin-left: auto;
   margin-right: 0;
-  padding: 8px 15px;
+  cursor: pointer;
+  padding:8px 23px 8px 8px;
+  position: relative;
 }
 .header__profile img {
   height: 32px;
   width: 32px;
   border-radius: 20px;
+}
+
+.header__profile::after, .header__profile::before{
+  content: '';
+  width: 5px;
+  height: 1px;
+  background: #6F6F6F;
+  position: absolute;
+  top: 25px;
+  border-radius: 50px;
+}
+.header__profile::before{
+  transform: rotate(40deg);
+  left: 47px;
+}
+.header__profile::after{
+  transform: rotate(-40deg);
+  left: 50px;
 }
