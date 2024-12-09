@@ -31,14 +31,12 @@ html, body {
 /* PAGE */
 
 .page{
-  height: 100vh;
 }
 .page__grid{
   display: grid;
   grid-template-rows: 53px 190px 290px 250px;
   grid-template-columns: 2fr 7fr 4fr ;
   row-gap: 12px;
-  height:100vh;
 }
 .profile {
   display: flex;
@@ -269,7 +267,7 @@ html, body {
 
 /* ASIDE */
 .aside {
-  grid-column: 3 / 4;
+  grid-column: 3;
   grid-row: 3;
   margin-left: 16px;
   position: sticky;
@@ -321,6 +319,12 @@ html, body {
   height: 64px;
   border-radius: 50px;
   margin: 5px 0;
+}
+.friends__online-wrapper-item div, .friends__wrapper-item div{
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  max-width: 60px; 
 }
 .friends-line {
   height: 1px;
@@ -375,6 +379,10 @@ html, body {
 }
 .subscriptions__wrapper-item-name span{
   margin-top: 2px;
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  max-width: 170px; 
 }
 .subscriptions__wrapper-item-name-status{
   color: var(--gray-color);
