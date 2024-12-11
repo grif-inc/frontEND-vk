@@ -9,10 +9,10 @@
 /* Sidebar */
 
 .sidebar {
-  padding: 15px 0 0 0;
-  margin: 52px 0 0 0;
+  padding: 12px 0 0 0;
   grid-row: 1 / 5;
-  min-width: 160px;
+  max-width: 160px;
+  margin-top: 50px;
 }
 .sidebar__line{
   background: #363738;

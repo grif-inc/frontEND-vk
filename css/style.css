@@ -45,8 +45,8 @@ html, body {
   border: #363738 1px solid;
   background: var(--bacground-color-elements);
   border-radius: 10px;
-  grid-column: 2 / 4;
-  grid-row: 2 / 3;
+  max-width: 910px;
+  margin-bottom: 8px;
 }
 .profile-avatar img{
   width: 150px;
@@ -130,11 +130,9 @@ html, body {
 }
 /* PREVIEW-PANEL */
 .preview-panel {
-  grid-column: 2 / 3;
   border: #363738 1px solid;
   background: var(--bacground-color-elements);
   border-radius: 10px;
-  grid-row: 3 / 4;
   padding: 8px;
 }
 .preview-panel__sections {
@@ -201,10 +199,10 @@ html, body {
 
 
 .page__inner {
-  grid-row: 4;
+  max-width: 600px;
 }
 .page__inner div{
-  margin-bottom: 16px;
+  
 }
 
 
@@ -267,11 +265,10 @@ html, body {
 
 /* ASIDE */
 .aside {
-  grid-column: 3;
-  grid-row: 3;
   margin-left: 16px;
   position: sticky;
   top: 64px;
+  max-width: 345px;
 }
 .friends, .gifts, .subscriptions{
   padding: 8px 8px 16px 8px;
@@ -280,7 +277,6 @@ html, body {
   border: #363738 1px solid;
   background: var(--bacground-color-elements);
   border-radius: 10px;
-  max-width: 345px;
   margin-bottom: 16px;
 }
 .friends__online-heading, .friends__heading, .gifts__heading, .subscriptions__heading{

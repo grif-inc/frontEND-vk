@@ -12,6 +12,7 @@
 .header {
   position: fixed;
   width: 100%;
+  top: 0;
   color: var(--white);
   background-color: #222222;
   border-bottom: #292929 1px solid;
