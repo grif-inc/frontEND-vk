@@ -219,7 +219,6 @@ html, body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  grid-column: 2 / 3;
   border: #363738 1px solid;
   background: var(--bacground-color-elements);
   border-radius: 10px;
@@ -238,7 +237,7 @@ html, body {
   background: #363738;
   width: 0.5px;
   height: 28px;
-  margin: 15px 12px 0 0;
+  margin: 15px 12px 12px 0;
 }
 .new-post__button-plus{
   font-size: 35px;
@@ -265,11 +264,88 @@ html, body {
 
 
 .posts {
-  grid-column: 2 / 3;
-  background-color: #0671b8bd;
-  border: 1px solid red;
-  align-self: start;
+  border: #363738 1px solid;
+  background: var(--bacground-color-elements);
+  border-radius: 10px;
 }
+.posts__block {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid #363738;
+  margin-bottom: 8px;
+}
+.posts__block-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 20px;
+}
+.posts__block-list a {
+  padding: 4px 8px;
+  color: #828282;
+  font-size: 13px;
+  font-weight: 500;
+}
+.posts__block-search {
+  padding-right: 20px;
+  margin-left: 38%;
+}
+.posts__block-search img{
+  width: 20px;
+  height: 20px;
+  filter: grayscale(1) brightness(0.5) hue-rotate(180deg);
+}
+.posts__element {
+}
+.posts__element-head {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 16px 20px 0;
+  color: var(--white);
+  font-weight: 600;
+  font-size: 13px;
+}
+.posts__element-head-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  margin-right: 12px;
+}
+.posts__element-head-title {
+  display: flex;
+  align-items: center;
+}
+.posts__element-head-title img {
+  width: 16px;
+  height: 16px;
+  margin-left: 4px;
+}
+.posts__element-content {
+}
+.posts__element-content-photo {
+  width: 100%;
+  height: auto;
+  padding: 12px 0 0;
+}
+.posts__element-content-text {
+  padding: 8px 20px 0;
+  color: var(--white);
+}
+.posts__element-footer {
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* ASIDE */
 .aside {
@@ -349,6 +425,10 @@ html, body {
   align-items: flex-start;
   margin-left: 10px;
   overflow: hidden;
+  transition: margin-left 0.15s ease;
+}
+.gifts__wrapper:hover{
+  margin-left: 4px;
 }
 .gifts__wrapper img{
   width: 80px;
