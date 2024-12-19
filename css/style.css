@@ -18,9 +18,13 @@ html, body {
 }
 
 .container{
+  display: flex;
   padding: 0 15px;
   max-width: 1130px;
   margin: 0 auto;
+}
+.container--header {
+  display: block;
 }
 
 .no-drag {
@@ -31,12 +35,11 @@ html, body {
 /* PAGE */
 
 .page{
-}
-.page__grid{
-  display: grid;
-  grid-template-rows: 53px 190px 290px 250px;
-  grid-template-columns: 2fr 7fr 4fr ;
-  row-gap: 12px;
+} 
+.page__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 .profile {
   display: flex;
@@ -45,8 +48,9 @@ html, body {
   border: #363738 1px solid;
   background: var(--bacground-color-elements);
   border-radius: 10px;
-  max-width: 910px;
-  margin-bottom: 8px;
+  margin-bottom: 14px;
+  margin-top: 62px;
+  width: 100%;
 }
 .profile-avatar img{
   width: 150px;
@@ -197,9 +201,14 @@ html, body {
 
 
 
-
+.page__content {
+  display: flex;
+}
 .page__inner {
   max-width: 600px;
+}
+.page__inner > div{
+    margin-bottom: 16px;
 }
 .page__inner div{
   
@@ -215,7 +224,6 @@ html, body {
   background: var(--bacground-color-elements);
   border-radius: 10px;
   padding: 4px;
-  margin-top: 12px;
   color: white;
   max-height: 45px;
 }
@@ -265,10 +273,14 @@ html, body {
 
 /* ASIDE */
 .aside {
+  align-self: flex-start;
   margin-left: 16px;
   position: sticky;
   top: 64px;
   max-width: 345px;
+}
+.aside > div {
+  margin-bottom: 16px;
 }
 .friends, .gifts, .subscriptions{
   padding: 8px 8px 16px 8px;
@@ -277,7 +289,6 @@ html, body {
   border: #363738 1px solid;
   background: var(--bacground-color-elements);
   border-radius: 10px;
-  margin-bottom: 16px;
 }
 .friends__online-heading, .friends__heading, .gifts__heading, .subscriptions__heading{
   padding: 3px 12px 1px;
