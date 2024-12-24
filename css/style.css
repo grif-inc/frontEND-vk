@@ -27,7 +27,7 @@ html, body {
   display: block;
 }
 
-.no-drag {
+img {
   -webkit-user-drag: none; /* Отключает перетаскивание изображений*/
   user-select: none; /* Отключает выделение изображений как текста */
 }
@@ -332,10 +332,174 @@ html, body {
 .posts__element-content-text {
   padding: 8px 20px 0;
   color: var(--white);
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 600;
 }
 .posts__element-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 6px 20px;
+  border-bottom: 1px solid #363738;
+}
+.posts__element-footer-likes {
+  padding: 4px 8px 4px 0;
+}
+.posts__element-footer-comments {
+  padding: 4px 8px;
+}
+.posts__element-footer-repost {
+  padding: 4px 8px;
+}
+.posts__element-footer-time {
+  margin-left: auto;
+  color: #828282;
+  font-size: 13px;
+  cursor: pointer;
+}
+.posts__element-footer-likes, .posts__element-footer-comments, .posts__element-footer-repost {
+  display: flex;
+  align-items: center;
+  color: #828282;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.posts__element-footer-likes img, .posts__element-footer-comments img, .posts__element-footer-repost img {
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+} 
+
+.posts__element-comment {
+  padding: 0 0 20px;
+}
+.posts__element-comment-filter {
+  display: flex;
+  align-items: flex-end;
+  padding: 14px 20px 4px;
+  color: #71AAEB;
+  font-size: 13px;
+}
+.posts__element-comment-filter img{
+  width: 12px;
+  height: 12px;
+  margin-left: 5px;
+}
+.posts__element-comment-container {
+  display: flex;
+  padding: 0 20px;
+  font-size: 13px;
+}
+.posts__element-comment-container--answer{
+  margin: 0 20px 0 58px;
+  padding: 0;
+  border-bottom: 1px solid #363738;
+}
+.posts__element-comment-container--answer > .posts__element-comment-container-text{
+  border-bottom: none;
 }
 
+.posts__element-comment-container-avatar{
+  
+}
+.posts__element-comment-container-avatar img{
+  width: 28px;
+  height: 28px;
+  border-radius: 50px;
+  margin-bottom: -25px;
+}
+.posts__element-comment-container-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 0 0 8px;
+  color: var(--white);
+  padding: 7px 0;
+  border-bottom: 1px solid #363738;
+}
+.posts__element-comment-container-text > a{
+  color: var(--white);
+  font-weight: 600;
+  padding-bottom: 4px;
+}
+.posts__element-comment-container-text--last {
+  border-bottom: none;
+}
+.posts__element-comment-container-text-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 4px 0 0;
+}
+.posts__element-comment-container-text-bottom a{
+  padding-left: 8px;
+  color: #71AAEB;
+}
+.posts__element-comment-container-text-bottom-like {
+  display: flex;  
+  margin-left: auto;
+}
+.posts__element-comment-container-text-bottom-like img{
+  width: 16px;
+  height: 13px;
+  margin-right: 2px;
+}
+.posts__element-comment-container-text-bottom-like div, .posts__element-comment-container-text-bottom span{
+  color: #828282;
+  font-weight: 600;
+}
+.posts__element-comment-write {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 12px 20px 0;
+}
+.posts__element-comment-write input{
+  width: 450px;
+  height: 34px;
+  padding: 7px 12px 9px;
+  border: 1px solid #4e4e50;
+  background: var(--bacground-color-elements);
+  border-radius: 5px;
+  color: var(--white);
+  font-size: 13px;
+}
+.posts__element-comment-write-input{
+  position: relative;
+}
+.posts__element-comment-write input:focus::placeholder{
+  color: transparent;
+}
+.posts__element-comment-write-input-icons{
+  display: flex;
+  padding-left: 8px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.posts__element-comment-write-input-icons img{
+  width: 18px;
+  height: 18px;
+  margin-left: 7px;
+}
+.posts__element-comment-write > img{
+  width: 28px;
+  height: 28px;
+  border-radius: 50px;
+}
+.posts__element-comment-write-send img{
+  width: 24px;
+  height: 24px;
+}
+.posts__element-comment-write-send{
+  display: flex;
+  background: var(--bacground-color-elements);
+}
 
 
 
