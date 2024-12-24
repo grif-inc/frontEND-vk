@@ -66,22 +66,26 @@
   height: 16px;
   cursor: text;
 }
-.header__notification img{
+.header__notification img, .header__musik--mobile img{
   width: 23px;
   height: 23px;
 }
-.header__notification{
+.header__notification, .header__musik--mobile{
   padding: 11px 15px;
   cursor: pointer;
 }
-.header__musik-box:hover, .header__notification:hover, .header__profile:hover{
+.header__musik-box:hover, .header__notification:hover, .header__profile:hover, .header__musik--mobile:hover{
   background-color: var(--hover-color);
+}
+.header__musik--mobile{
+  filter: brightness(0) saturate(100%) invert(58%) sepia(0%) saturate(0%) hue-rotate(187deg) brightness(93%) contrast(89%);
+  display: none;
 }
 .header__musik-box{
   display: flex;
   max-width: 380px;
   min-width: 347px;
-  padding: 15px 15px;
+  padding: 16px 16px;
   color: var(--gray-color);
   cursor: pointer;
   align-items: center;

@@ -631,10 +631,87 @@ img {
 .subscriptions__wrapper-item-name span{
   margin-top: 2px;
   white-space: nowrap; 
-  overflow: hidden; 
+  overflow: hidden;
   text-overflow: ellipsis; 
   max-width: 170px; 
 }
 .subscriptions__wrapper-item-name-status{
   color: var(--gray-color);
+}
+
+
+
+
+
+/* Layout */
+
+@media (max-width: 1200px) {
+  .sidebar{
+    display: none;
+  }
+  .container, .container--header{
+    max-width: 1000px;
+    padding: 0 30px;
+  }
+  .page__inner{
+    width: auto;
+    max-width: none;
+  }
+}
+@media (max-width: 1000px) {
+  .container, .container--header{
+    max-width: 768px;
+    padding: 0 30px;
+  }
+  .header__musik-box, .aside, .profile-button--dop{
+    display: none;
+  }
+  .header__musik--mobile{
+    display: block;
+  }
+  .profile-button{
+    margin: 0px 0 0 3.5em;
+  }
+  .new-post__button{
+    padding: 2px 240px;
+  }
+  .posts__element-comment-write input{
+    width: 590px;
+  }
+  .preview-panel__content-buttons{
+    justify-content: space-evenly;
+  }
+  .preview-panel__content-photo{
+    max-width: 666px;
+  }
+  .preview-panel__content-photo img{
+    width: 219px;
+    height: 219px;
+  }
+  .posts__block-search{
+    margin-left: 49%;
+  }
+}
+@media (max-width: 768px) {
+  
+}
+@media (max-width: 480px) {
+}
+
+
+
+
+
+@media (max-height: 900px) {
+  .gifts{
+    display: none;
+  } 
+}
+@media (max-height: 750px) {
+  .subscriptions{
+    display: none;
+  }
+  .gifts{
+    display: block;
+  } 
 }
