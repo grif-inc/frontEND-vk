@@ -34,8 +34,6 @@ img {
 
 /* PAGE */
 
-.page{
-} 
 .page__wrapper {
   display: flex;
   flex-direction: column;
@@ -90,8 +88,6 @@ img {
   width: 8px;
   height: 12px;
   background: var(--bacground-color-elements);
-}
-.profile-wrapper {
 }
 .profile-main {
   display: flex;
@@ -221,7 +217,7 @@ img {
   width: 175px;
   height: auto;
   margin-right: 5px;
-  border: 0.7px solid #363738;
+  border: 1px solid #363738;
 }
 .preview-panel__content-buttons {
   display: flex;
@@ -260,9 +256,7 @@ img {
 .page__inner > div{
     margin-bottom: 16px;
 }
-.page__inner div{
-  
-}
+
 
 
 .new-post, .new-post--mobile {
@@ -367,8 +361,6 @@ img {
   height: 20px;
   filter: grayscale(1) brightness(0.5) hue-rotate(180deg);
 }
-.posts__element {
-}
 .posts__element-head {
   display: flex;
   align-items: center;
@@ -398,8 +390,6 @@ img {
   width: 16px;
   height: 16px;
   margin-left: 4px;
-}
-.posts__element-content {
 }
 .posts__element-content-photo {
   width: 100%;
@@ -476,10 +466,6 @@ img {
 }
 .posts__element-comment-container--answer > .posts__element-comment-container-text{
   border-bottom: none;
-}
-
-.posts__element-comment-container-avatar{
-  
 }
 .posts__element-comment-container-avatar img{
   width: 28px;
@@ -680,8 +666,6 @@ img {
 }
 .gifts {
   padding-right: 0;
-}
-.gifts__heading {
 }
 .gifts__wrapper{
   display: flex;
