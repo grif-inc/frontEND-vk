@@ -138,6 +138,9 @@
                         <div class="profile-avatar">
                             <img src="/img/photo/avatar-profile.jpg" alt="avatar">
                             <div class="profile__online-item"></div>
+                            <div class="profile__online-item--mobile">
+                                <div></div>
+                            </div>
                         </div>
                         <div class="profile-main">
                             <div class="profile-info">
@@ -158,11 +161,16 @@
                             <div class="page__inner">
                                 <div class="preview-panel">
                                     <div class="preview-panel__sections">
+                                        <div class="preview-panel__sections-wrapper">
                                         <div class="preview-panel__sections-item"><img src="/img/icons/photo-icon.png" alt="photo">Фото</div>
                                         <div class="preview-panel__sections-item"><img src="/img/icons/music-icon.png" alt="musik">Музыка</div>
                                         <div class="preview-panel__sections-item"><img src="/img/icons/album-icon.png" alt="album">Альбомы</div>
                                         <div class="preview-panel__sections-item"><img src="/img/icons/clip-icon.png" alt="clips">Клипы</div>
                                         <div class="preview-panel__sections-item"><img src="/img/icons/articles-icon.png" alt="articles">Статьи</div>
+                                    </div>
+                                        <div class="preview-panel-settings-icon">
+                                            <img src="/img/icons/settings.png" alt="">
+                                        </div>
                                     </div>
                                     <div class="preview-panel__content">
                                         <div class="preview-panel__content-photo ">
@@ -186,12 +194,18 @@
                                     <img src="/img/icons/clip-icon.png" alt="">
                                     <img src="/img/icons/articles-icon.png" alt="">
                                 </div>
+                                <div class="new-post--mobile">
+                                    <div>
+                                        <span>Что у вас нового?</span>
+                                    </div>
+                                </div>
                                 <div class="posts">
                                     <div class="posts__block">
                                         <ul class="posts__block-list">
-                                            <a href=""><span>Все посты</span></a>
-                                            <a href=""><span>Мои посты</span></a>
-                                            <a href=""><span>Архив постов</span></a>
+                                            <a class="posts__block-list-element" href=""><span>Все посты</span></a>
+                                            <a class="posts__block-list-element" href=""><span>Мои посты</span></a>
+                                            <a class="posts__block-list-element" href=""><span>Архив постов</span></a>
+                                            <a class="posts__block-list-element--mobile" href=""><span>5 ЗАПИСЕЙ</span></a>
                                         </ul>
                                         <div class="posts__block-search"><img src="/img/icons/search-icon.png" alt=""></div>
                                     </div>
@@ -224,8 +238,8 @@
                                             <div class="posts__element-comment-container">
                                                 <a href="" class="posts__element-comment-container-avatar"><img src="/img/photo/friends-avatar.jpg" alt=""></a>
                                                 <div class="posts__element-comment-container-text">
-                                                    <a href="">Хауди Хо</a>
-                                                    <div>Машина</div>
+                                                    <a href="">Наталья Морская-Пехота</a>
+                                                    <div>Коммент</div>
                                                     <div class="posts__element-comment-container-text-bottom">
                                                         <span>13 дек 2020</span>
                                                         <a href="">Ответить</a>
@@ -240,7 +254,7 @@
                                             <div class="posts__element-comment-container posts__element-comment-container--answer">
                                                 <a href="" class="posts__element-comment-container-avatar"><img src="/img/photo/friends-avatar.jpg" alt=""></a>
                                                 <div class="posts__element-comment-container-text">
-                                                    <a href="">Хауди Хо</a>
+                                                    <a href="">Иван Дрю</a>
                                                     <div>Машина</div>
                                                     <div class="posts__element-comment-container-text-bottom">
                                                         <span>13 дек 2020</span>
@@ -508,7 +522,15 @@
                                         </div>
                                     </div>
                                 </div>
+                            
                             </div> 
+                            <nav class="nav-menu--mobile">
+                                <a class="nav-menu--mobile-item" href=""><img src="/img/icons/home.png" alt=""><span>Главная</span></a>
+                                <a class="nav-menu--mobile-item" href=""><img src="/img/icons/video-icon.png" alt=""><span>Видео</span></a>
+                                <a class="nav-menu--mobile-item" href=""><img src="/img/icons/messeg-icon.png" alt=""><span>Мессенджер</span></a>
+                                <a class="nav-menu--mobile-item" href=""><img src="/img/icons/notification-icon.png" alt=""><span>Уведомления</span></a>
+                                <a class="nav-menu--mobile-item nav-menu--mobile-item--last" href=""><img src="/img/icons/menu.png" alt=""><span>Ещё</span></a>
+                            </nav>
                         </div>
                     </div>
                 </div>
