@@ -60,7 +60,7 @@ img {
 .profile-avatar{
   position: relative;
 }
-.profile__online-item{
+.profile__online-item, .friends__online-wrapper-item-desk{
   width: 19px;
   height: 19px;
   background-color: #4BB34B;
@@ -72,7 +72,7 @@ img {
   bottom: 10%;
   right: 10%;
 }
-.profile__online-item--mobile{
+.profile__online-item--mobile, .friends__online-wrapper-item-mobile{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -86,7 +86,7 @@ img {
   right: 8%;
   display: none;
 }
-.profile__online-item--mobile div{
+.profile__online-item--mobile div, .friends__online-wrapper-item-mobile div{
   width: 8px;
   height: 12px;
   background: var(--bacground-color-elements);
@@ -196,6 +196,11 @@ img {
 .preview-panel-settings-icon {
   padding: 0 8px;
   border-left: solid 1px var(--hover-color);
+  opacity: 0;
+  transition: opasity 5s ease;
+}
+.preview-panel-settings-icon:hover{
+  opacity: 1;
 }
 .preview-panel-settings-icon img{
   width: 17px;
@@ -378,13 +383,16 @@ img {
   height: 40px;
   border-radius: 50px;
   margin-right: 12px;
+  cursor: pointer;
 }
 .posts__element-head-title {
   display: flex;
   align-items: center;
   white-space: nowrap;
   overflow: hidden;
-  width: 100%;
+}
+.posts__element-head-title:hover {
+  text-decoration: underline;
 }
 .posts__element-head-title img {
   width: 16px;
@@ -550,6 +558,7 @@ img {
   right: 10px;
   top: 50%;
   transform: translateY(-50%);
+  cursor: pointer;
 }
 .posts__element-comment-write-input-icons img{
   width: 18px;
@@ -560,6 +569,7 @@ img {
   width: 28px;
   height: 28px;
   border-radius: 50px;
+  cursor: pointer;
 }
 .posts__element-comment-write-send img{
   width: 24px;
@@ -626,6 +636,9 @@ img {
   border-radius: 10px;
   transition: background-color 0.15s ease;
 }
+.friends__online-wrapper-item {
+  position: relative;
+}
 .friends__online-wrapper-item:hover, .friends__wrapper-item:hover{
   background: var(--hover-color);
   cursor: pointer;
@@ -641,6 +654,23 @@ img {
   overflow: hidden; 
   text-overflow: ellipsis; 
   max-width: 60px; 
+}
+.friends__online-wrapper-item-mobile{
+  display: flex;
+  width: 16px;
+  height: 21px;
+  bottom: 20%;
+  right: 14%;
+}
+.friends__online-wrapper-item-mobile div{
+  width: 6px;
+  height: 9px;
+}
+.friends__online-wrapper-item-desk{
+  width: 16px;
+  height: 16px;
+  bottom: 23%;
+  right: 13%;
 }
 .friends-line {
   height: 1px;
@@ -875,6 +905,9 @@ img {
   }
   .profile__online-item--mobile, .nav-menu--mobile{
     display: flex;
+  }
+  .preview-panel-settings-icon{
+    opacity: 1;
   }
 }
 @media (max-width: 480px) {
